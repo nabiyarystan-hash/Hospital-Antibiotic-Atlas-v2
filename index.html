@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Community Antibiotic Consumption Atlas of Kazakhstan</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+<header>
+
+<h1>
+Community Antibiotic Consumption Atlas of Kazakhstan (2024)
+</h1>
+
+<p>
+Interactive atlas of community antibiotic consumption across regions of Kazakhstan.
+Consumption is presented as Community Defined Daily Doses per 1,000 inhabitants per year (C-DID/year).
+</p>
+
+</header>
+
+
+
+<main>
+
+
+<section>
+
+<h2>Select an antibiotic</h2>
+
+<select id="antibioticSelect">
+</select>
+
+</section>
+
+
+
+<section>
+
+<iframe
+id="mapFrame"
+width="100%"
+height="550"
+frameborder="0"
+scrolling="no">
+</iframe>
+
+</section>
+
+
+
+<section>
+
+<h2>Consumption data by region</h2>
+
+<div id="smallTable">
+
+</div>
+
+</section>
+
+
+
+<section>
+
+<h2>Complete dataset</h2>
+
+<div id="fullTable">
+
+</div>
+
+</section>
+
+
+
+</main>
+
+
+
+<footer>
+
+<p>
+Source: Kazakhstan community antibiotic consumption data, 2024.
+</p>
+
+</footer>
+
+
+
+<!-- Сначала загружаем данные -->
+
+<script src="data.js"></script>
+
+<script src="tableData.js"></script>
+
+<!-- Потом логику -->
+
+<script src="script.js"></script>
+
+
+</body>
+
+</html>
